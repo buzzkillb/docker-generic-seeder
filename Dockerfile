@@ -1,4 +1,5 @@
-FROM alpine:3.11 as builder
+FROM arm32v7/alpine:3.11 as builder
+COPY qemu-arm-static /usr/bin
 
 RUN apk update && apk add \
     g++ \
@@ -14,7 +15,8 @@ RUN apk update && apk add \
     cd generic-seeder && \
     make
 
-FROM alpine:3.11
+FROM arm32v7/alpine:3.11
+COPY qemu-arm-static /usr/bin
 
 RUN apk --no-cache add    \
       libgcc              \
