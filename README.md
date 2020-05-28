@@ -5,6 +5,7 @@
 
 [![Alpine Version](https://img.shields.io/badge/Alpine%20version-v3.11-green.svg?style=for-the-badge)](https://alpinelinux.org/)  
 Docker based on https://github.com/team-exor/generic-seeder a tweaked Sipa Bitcoin Seeder  
+Discussion on https://blockforums.org/topic/368-generic-seeder-dns-seeds/  
 ## setting.conf [Denarius]  
 ```
 protocol_version="33900"
