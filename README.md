@@ -42,7 +42,7 @@ cf_seed_dump="dnsseed.dump"
 version: '3'
 services:
   generic-seeder:
-    image: buzzkillb/generic-seeder:latest
+    image: buzzkillb/generic-seeder:armv7
     volumes:
       - ~/docker/generic-seeder/settings.conf:/settings.conf
     ports:
